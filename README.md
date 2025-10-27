@@ -55,5 +55,4 @@ no shutdown  //ativa a interface vlan 1, permitindo que haja trafego
 exit
 
 # Verify the IP address conf on S1 and 
-show ip interface brief   //resumo do status e conf (IP, up/down) das interfaces
-
+show ip interface brief   //resumo do status e conf (IP, up/down)
