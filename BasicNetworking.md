@@ -18,5 +18,5 @@ exit
 # Set Clock
 show clock
 clock timezone EST -5
-no clock timezone   <!-- reverter o clos set -->
+no clock timezone   <!-- reverter o clock set -->
 
