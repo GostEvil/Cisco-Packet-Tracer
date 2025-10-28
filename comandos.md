@@ -18,7 +18,7 @@
 | `R1(config)#` | `banner motd @` | Inicia e altera o banner (MOTD). |
 | `R1(config)#` | `enable secret cisco` | Define a senha secreta do modo EXEC. |
 | `R1(config)#` | `service password-encryption` | Criptografa todas as senhas armazenadas. |
-| `R1(config)#` | `line vty 0 4` | Entra na configuração das linhas virtuais (Telnet/SSH). |
+| `R1(config)#` | `line vty 0 4` | Entra na configuração das **linhas virtuais** (Telnet/SSH). |
 | `R1(config-line)#` | `password cisco` | Define a senha de acesso remoto. |
 | `R1(config-line)#` | `login` | Exige autenticação por senha para acesso remoto. |
 | `R1(config-line)#` | `exec-timeout 10 0` | Desconecta sessão após 10 minutos de inatividade. |
@@ -28,7 +28,7 @@
 | `R1(config-line)#` | `password cisco` | Define senha para acesso via console. |
 | `R1(config-line)#` | `login` | Obriga autenticação na consola. |
 | `R1(config-line)#` | `exit` | Retorna ao modo de configuração global. |
-| `R1(config)#` | `interface fastEthernet 0/0` | Entra na configuração da interface FastEthernet 0/0. |
+| `R1(config)#` | `interface fastEthernet 0/0` | Entra na configuração de uma porta do dispositivo |
 | `R1(config-if)#` | `ip address 192.168.0.254 255.255.255.0` | Atribui IP e máscara à interface. |
 | `R1(config-if)#` | `no shutdown` | Ativa a interface (por padrão vem desativada). |
 | `R1(config-if)#` | `exit` | Volta ao modo global de configuração. |
