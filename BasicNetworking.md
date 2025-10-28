@@ -1,5 +1,12 @@
 # Setup
-#### Basic Switch Config
+#### Device names
+```
+Switch# configure terminal
+Switch(config)# hostname Sw-Floor-1
+Sw-Floor-1(config)#
+```
+
+#### Switch Config
 ```bash
 config t
 hostname s1
@@ -8,7 +15,7 @@ banner motd "no enter"
 exit
 copy running-config startup-config
 ```
-#### Basic Conf with Password Security
+#### Conf with Password Security
 ```bash 
 password letmein
 login
