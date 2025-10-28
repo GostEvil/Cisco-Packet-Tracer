@@ -1,5 +1,5 @@
 # Cisco Packet Tracer
-# 💻 CLI Modes
+### 💻 CLI Modes
 | **CLI** | **Descricao Modo** |
 |---------|---------------|
 |Router>|EXEC|
@@ -8,7 +8,7 @@
 |Router(config-if)#|Interface Config|
 |Router(config-line)#|Line Config| 
 
-# 📖 Comandos
+### 📖 Comandos
 | **Prompt** | **Comando** | **Descrição** |
 |-------------|-------------|----------------|
 | `Router>` | `enable` | Entra no modo EXEC privilegiado. |
