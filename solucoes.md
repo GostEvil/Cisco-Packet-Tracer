@@ -1,4 +1,5 @@
 # 2.9.1
+```Bash
 enable
 config terminal
 hostname Class-A
