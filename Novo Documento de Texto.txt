@@ -1,37 +1,5 @@
-> **Module 10**
-## Basic Router Configuration
-Configure device name
-`hostname Router`
-Secure pivileged ESEC mode
-`enable secret pass`
-Secure user EXEC mode
-```
-line console 0
-password pass
-login
-```
-Secure remote Telnet / SSH access
-```
-line vty 0 4  
-password pass  
-login  
-transport input {ssh/telnet}
-```
-Secure all passwords in config file
-```
-exit
-service password-encryption
-```
-Provide legal notification
-`banner motd # msg #`
-Save config
-````
-end
-copy running-config startup-config
-````
+-config
 
-#### Exemplo de Configuração de Router
-```
 Router> enable
 Router# configure terminal
 Router(config)# hostname R1
@@ -56,17 +24,9 @@ R1(config)#
 R1(config)#end
 R1# copy running-config startup-config
 R1#
-```
 
-## Configure Router Interfaces
-```
-interface g0/0
-ip address ipv4 mask
-ipv6 address ipv6 masc
-no shutdown
-```
-#### Configure Router Interfaces Example
-```
+-interface
+
 R1> enable
 R1# configure terminal
 R1(config)# interface gigabitEthernet 0/0/0
@@ -75,4 +35,11 @@ R1(config-if)# ip address 192.168.10.1 255.255.255.0
 R1(config-if)# ipv6 address 2001:db8:acad:10::1/64
 R1(config-if)# no shutdown
 R1(config-if)# exit
-```
+
+
+-S
+en
+conf t
+interface vlan 1
+ip address 192 255
+no shutdown
