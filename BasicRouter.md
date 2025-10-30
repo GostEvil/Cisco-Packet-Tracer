@@ -59,3 +59,22 @@ R1(config)#end
 R1# copy running-config startup-config
 R1#
 ```
+
+## Configure Router Interfaces
+```
+interface g0/0
+ip address ipv4 mask
+ipv6 address ipv6/prefix
+no shutdown
+```
+#### Configure Router Interfaces Example
+```
+R1> enable
+R1# configure terminal
+R1(config)# interface gigabitEthernet 0/0/0
+R1(config-if)# description Link to LAN
+R1(config-if)# ip address 192.168.10.1 255.255.255.0
+R1(config-if)# ipv6 address 2001:db8:acad:10::1/64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+```
