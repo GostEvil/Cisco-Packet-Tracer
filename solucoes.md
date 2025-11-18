@@ -18,4 +18,3 @@ ip address 128.107.20.10 255.255.255.0
 no shutdown #save config
 end
 copy running-config startup-config
-
