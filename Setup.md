@@ -58,7 +58,6 @@ Sw-Floor-1(config)# banner motd #Authorized Access Only#
 
 **copy running-config startup-config** → Guarda a running config np startup config
 
-
 ### Aceder switch
 ```
 Sw-Floor-1# configure terminal
@@ -68,24 +67,6 @@ Sw-Floor-1(config-if)# no shutdown
 Sw-Floor-1(config-if)# exit
 Sw-Floor-1(config)# ip default-gateway 192.168.1.1
 ```
-
-
-
-```
-
-```
-
-
-```
-
-```
-
-
-```
-```
-
-
-
 #### Switch Config
 ```bash
 config t
@@ -104,7 +85,6 @@ exit
 service password-encryption
 exit
 ```
-
 #### Set Clock
 ```bash
 show clock
