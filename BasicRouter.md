@@ -29,7 +29,6 @@ Save config
 end
 copy running-config startup-config
 ````
-
 #### Exemplo de Configuração de Router
 ```
 Router> enable
