@@ -16,3 +16,11 @@ Se possível deverás fazer um **clone** ou um **fork** deste arquivo.
 * se não houver commits -> não fazes nada
 * se houver commits, rodas o seguinte commando para teres a pasta com as informações e documentos mais recentes
 > `git pull`
+
+#### Pasta **Comandos** 
+BasicRouter -> Basic Router Configuration
+CadernoApontamentos -> Cenas importantes que podemos vir a errar
+Comandos -> Comandos do Cisco Packet Tracer
+DataLinkLayer -> Peguei nos modulos, tou a tentar resumir
+DicasPacketTracer -> Dicas no Cisco Packet Tracer
+IPv6Addressing ->
