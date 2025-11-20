@@ -43,3 +43,119 @@ conf t
 interface vlan 1
 ip address 192 255
 no shutdown
+
+
+_______________
+\/\/17.8.2\/\/
+
+-----R1-
+R1 Configurations
+
+- Configure the device name according to the Addressing Table.
+  hostname R1
+
+- Disable DNS lookup.
+  no ip domain-lookup
+
+- Assign Ciscoenpa55 as the encrypted privileged EXEC mode password.
+  enable secret Ciscoenpa55
+
+- Assign Ciscoconpa55 as the console password and enable login.
+  line con 0
+   password Ciscoconpa55
+   login
+
+- Require that a minimum of 10 characters be used for all passwords.
+  security passwords min-length 10
+
+- Encrypt all plaintext passwords.
+  service password-encryption
+
+- Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
+  banner motd #
+******************************************
+UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED!
+You must have explicit permission to access this device.
+****************************************** #
+
+- Configure and enable all the Gigabit Ethernet interfaces.
+  interface range g0/0 - 2
+   no shutdown
+
+- Configure the IPv4 addresses according to your addressing scheme.
+  interface g0/0
+   ip address 192.168.0.1 255.255.255.128
+  interface g0/1
+   ip address 192.168.0.129 255.255.255.192
+  interface g0/2
+   ip address 192.168.0.193 255.255.255.224
+  interface s0/0/1
+   ip address 172.16.1.2 255.255.255.252
+   no shutdown
+
+- Configure the IPv6 addresses according to the Addressing Table.
+  ipv6 unicast-routing
+  interface g0/0
+   ipv6 address 2001:db8:acad::1/64
+   ipv6 address fe80::1 link-local
+  interface g0/1
+   ipv6 address 2001:db8:acad:1::1/64
+   ipv6 address fe80::1 link-local
+  interface g0/2
+   ipv6 address 2001:db8:acad:2::1/64
+   ipv6 address fe80::1 link-local
+  interface s0/0/1
+   ipv6 address 2001:db8:2::1/64
+   ipv6 address fe80::1 link-local
+
+- Set the domain name to CCNA-lab.com
+  ip domain-name CCNA-lab.com
+
+- Generate a 1024-bit RSA key.
+  crypto key generate rsa general-keys modulus 1024
+
+- Configure the VTY lines for SSH access.
+  line vty 0 15
+   transport input ssh
+
+- Use the local user profiles for authentication.
+  line vty 0 15
+   login local
+
+- Create a user Admin1 with a privilege level of 15 and use the encrypted password of Admin1pa55.
+  username Admin1 privilege 15 secret Admin1pa55
+
+- Configure the console and VTY lines to log out after five minutes of inactivity.
+  line con 0
+   exec-timeout 5 0
+  line vty 0 15
+   exec-timeout 5 0
+
+- Block anyone for three minutes who fails to log in after four attempts within a two-minute period.
+  login block-for 180 attempts 4 within 120
+
+
+
+
+-----S1-
+enable
+conf t
+service password-encryption
+hostname S1
+enable secret 5 $1$mERr$Amm/da5NtiazLuZDbgqZ60
+no ip domain-lookup
+interface Vlan1
+ip address 192.168.0.2 255.255.255.128
+no shutdown
+ip default-gateway 192.168.0.1
+line con 0
+password 7 0802455D0A1606181C1B0D517F
+login
+exec-timeout 5 0
+line vty 0 4
+exec-timeout 5 0
+login
+line vty 5 15
+exec-timeout 5 0
+login
+end
