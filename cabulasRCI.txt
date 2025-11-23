@@ -47,6 +47,7 @@ no shutdown
 
 _______________
 \/\/17.8.2\/\/
+_______________
 
 -----R1-
 R1 Configurations
@@ -133,9 +134,6 @@ You must have explicit permission to access this device.
 
 - Block anyone for three minutes who fails to log in after four attempts within a two-minute period.
   login block-for 180 attempts 4 within 120
-
-
-
 
 -----S1-
 enable
