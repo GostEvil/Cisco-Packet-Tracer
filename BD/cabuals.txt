@@ -112,3 +112,16 @@ BEGIN
  END IF;
 END
 // DELIMITER ;
+
+11) Function to check bicycle availability.
+DELIMITER //
+CREATE FUNCTION fn_is_bicycle_available(p_bicycle_id INT)
+RETURNS TINYINT(1) DETERMINISTIC
+BEGIN
+ DECLARE st CHAR(1);
+ SELECT STATE INTO st
+ FROM bike_rental.bicycle
+ WHERE BICYCLE_ID = p_bicycle_id;
+ RETURN IF(st="1",1,0);
+END
+// DELIMITER ;
