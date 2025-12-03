@@ -36,3 +36,19 @@ BEGIN
  RETURN full_name;
 END
 // DELIMITER ;
+
+6) Procedure to create a reservation with a transaction.
+DELIMITER //
+CREATE PROCEDURE sp_create_reservation(IN p_reservation_id INT, IN p_client_id
+INT, IN p_bicycle_id INT, IN p_cost DECIMAL(10,2))
+BEGIN
+ DECLARE EXIT HANDLER FOR SQLEXCEPTION ROLLBACK;
+ START TRANSACTION;
+ INSERT INTO bike_rental.reservation (RESERVATION_ID, CLIENT_CLIENT_ID,
+BICYCLE_BICYCLE_ID, RESERVATION_DATE, TOTAL_COST)
+ VALUES (p_reservation_id, p_client_id, p_bicycle_id, CURDATE(), p_cost);
+ UPDATE bike_rental.bicycle SET STATE=1 WHERE BICYCLE_ID=p_bicycle_id;
+ COMMIT;
+END
+// DELIMITER ;
+
