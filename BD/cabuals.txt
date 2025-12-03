@@ -66,3 +66,15 @@ NEW.BICYCLE_BICYCLE_ID;
  END IF;
 END
 // DELIMITER;
+
+8) Trigger to Auto-update bicycle state after reservation delete.
+DELIMITER //
+CREATE TRIGGER tr_free_bicycle
+AFTER DELETE ON bike_rental.reservation
+FOR EACH ROW
+BEGIN
+ UPDATE bike_rental.bicycle
+ SET STATE = '0'
+ WHERE BICYCLE_ID = OLD.BICYCLE_BICYCLE_ID;
+END
+// DELIMITER ;
