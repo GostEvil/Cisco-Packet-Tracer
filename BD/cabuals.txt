@@ -24,3 +24,15 @@ BEGIN
  RETURN p_days * p_rate;
 END
 // DELIMITER 
+
+5) Function to get client name and address (client with ID=1)
+DELIMITER //
+CREATE FUNCTION fn_client_full_name(p_client_id INT)
+RETURNS VARCHAR(100) DETERMINISTIC
+BEGIN
+ DECLARE full_name VARCHAR(100);
+ SELECT CONCAT(Name, ' - ', address) INTO full_name
+ FROM bike_rental.client WHERE CLIENT_ID = p_client_id;
+ RETURN full_name;
+END
+// DELIMITER ;
