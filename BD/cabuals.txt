@@ -78,3 +78,37 @@ BEGIN
  WHERE BICYCLE_ID = OLD.BICYCLE_BICYCLE_ID;
 END
 // DELIMITER ;
+
+9) Trigger to set default reservation date.
+DELIMITER //
+CREATE TRIGGER tr_set_default_date
+BEFORE INSERT ON bike_rental.reservation
+FOR EACH ROW
+BEGIN
+ IF NEW.RESERVATION_DATE IS NULL THEN
+ SET NEW.RESERVATION_DATE = CURDATE();
+ END IF;
+END
+// DELIMITER ;
+
+10) Function + Trigger: Auto-calculate total cost.
+DELIMITER //
+CREATE FUNCTION fn_compute_total(p_days INT, p_rate DECIMAL(10,2))
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+ RETURN p_days * p_rate;
+END
+// DELIMITER ;
+DELIMITER //
+CREATE TRIGGER tr_auto_cost
+BEFORE INSERT ON bike_rental.reservation
+FOR EACH ROW
+BEGIN
+ IF NEW.TOTAL_COST IS NULL THEN
+ SET NEW.TOTAL_COST = fn_compute_total(
+ DATEDIFF(NEW.RETURN_DATE, NEW.DELIVERY_DATE),
+ 15.00
+ );
+ END IF;
+END
+// DELIMITER ;
