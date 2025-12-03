@@ -15,3 +15,12 @@ BEGIN
 p_model_id;
 END
 // DELIMITER ;
+
+4) Function to calculate rental cost. Input the number of days and the rate, and return days*rate.
+DELIMITER //
+CREATE FUNCTION fn_calculate_cost(p_days INT, p_rate DECIMAL(10,2))
+RETURNS DECIMAL(10,2) DETERMINISTIC
+BEGIN
+ RETURN p_days * p_rate;
+END
+// DELIMITER 
