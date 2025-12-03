@@ -1,5 +1,4 @@
 1) Create a Procedure to list all clients
-a) Ceate procedure:
 DELIMITER //
 CREATE PROCEDURE sp_list_clients()
 BEGIN
