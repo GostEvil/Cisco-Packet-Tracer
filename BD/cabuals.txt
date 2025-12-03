@@ -1,3 +1,12 @@
+1) Create a Procedure to list all clients
+a) Ceate procedure:
+DELIMITER //
+CREATE PROCEDURE sp_list_clients()
+BEGIN
+ SELECT * FROM bike_rental.client;
+END
+// DELIMITER ;
+
 2)Procedure to list all reservations of a specific client (for example, client_id=1).
 DELIMITER //
 CREATE PROCEDURE sp_client_reservations(IN p_client_id INT)
