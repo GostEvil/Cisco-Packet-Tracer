@@ -52,3 +52,17 @@ BICYCLE_BICYCLE_ID, RESERVATION_DATE, TOTAL_COST)
 END
 // DELIMITER ;
 
+7) Trigger to prevent double booking.
+DELIMITER //
+CREATE TRIGGER tr_prevent_double_booking
+BEFORE INSERT ON bike_rental.reservation
+FOR EACH ROW
+BEGIN
+ DECLARE bike_state CHAR(1);
+ SELECT STATE INTO bike_state FROM bike_rental.bicycle WHERE BICYCLE_ID =
+NEW.BICYCLE_BICYCLE_ID;
+ IF bike_state = 1 THEN
+ SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Bicycle already reserved';
+ END IF;
+END
+// DELIMITER;
