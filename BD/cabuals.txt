@@ -1,0 +1,17 @@
+2)Procedure to list all reservations of a specific client (for example, client_id=1).
+DELIMITER //
+CREATE PROCEDURE sp_client_reservations(IN p_client_id INT)
+BEGIN
+ SELECT * FROM bike_rental.reservation WHERE CLIENT_ID = p_client_id;
+END
+//DELIMITER ;
+
+3)Create a procedure that receives the model_ID (IN) and counts the total number of bicycles of this
+model_ID.
+DELIMITER //
+CREATE PROCEDURE sp_count_bicycles(IN p_model_id INT, OUT p_total INT)
+BEGIN
+ SELECT COUNT(*) INTO p_total FROM bike_rental.bicycle WHERE MODEL_ID =
+p_model_id;
+END
+// DELIMITER ;
