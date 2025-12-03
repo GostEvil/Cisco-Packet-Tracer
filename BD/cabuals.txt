@@ -125,3 +125,25 @@ BEGIN
  RETURN IF(st="1",1,0);
 END
 // DELIMITER ;
+
+12) Triggers to maintain per-model bicycle count.
+ALTER TABLE bike_rental.model ADD COLUMN BICYCLE_COUNT INT DEFAULT 0;
+DELIMITER //
+CREATE TRIGGER tr_bicycle_add
+AFTER INSERT ON bike_rental.bicycle
+FOR EACH ROW
+BEGIN
+ UPDATE bike_rental.model
+ SET BICYCLE_COUNT = BICYCLE_COUNT + 1
+ WHERE MODEL_ID = NEW.MODEL_MODEL_ID;
+END//
+DELIMITER ;
+DELIMITER //
+CREATE TRIGGER tr_bicycle_remove AFTER DELETE ON bike_rental.bicycle
+FOR EACH ROW
+BEGIN
+ UPDATE bike_rental.model
+ SET BICYCLE_COUNT = BICYCLE_COUNT - 1
+ WHERE MODEL_ID = OLD.MODEL_MODEL_ID;
+END //
+DELIMITER ;
