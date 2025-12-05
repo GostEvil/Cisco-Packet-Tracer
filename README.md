@@ -10,5 +10,5 @@ Se possível deverás fazer um **clone** ou um **fork** deste arquivo na tua má
 * se houver commits, rodas o seguinte commando para teres a pasta com as informações e documentos mais recentes
 > `git pull`
 
-#### Pastas
+### Queres contribuir?
 > Cadeiras e arquivos serão adicionados aqui ao longo do tempo. Se quiseres contribuir manda msg :D 
