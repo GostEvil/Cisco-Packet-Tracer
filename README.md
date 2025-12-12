@@ -12,3 +12,5 @@ Se possível deverás fazer um **clone** ou um **fork** deste arquivo na tua má
 
 ### Queres contribuir?
 > Cadeiras e arquivos serão adicionados aqui ao longo do tempo. Se quiseres contribuir manda msg :D 
+
+O plano de estudos foi **alterado** para o **ano letivo de 2025/26**.
