@@ -1,0 +1,15 @@
+﻿  Source.c
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(14,25): warning C4273: 'strlwr': vínculo de dll inconsistente
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(551,28): message : consulte a definição anterior de 'strlwr'
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(23,25): warning C4273: 'strupr': vínculo de dll inconsistente
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(580,28): message : consulte a definição anterior de 'strupr'
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(75,32): warning C4028: parâmetro formal 2 diferente da declaração
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(99,18): warning C4028: parâmetro formal 1 diferente da declaração
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(99,30): warning C4028: parâmetro formal 2 diferente da declaração
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(110,19): warning C4028: parâmetro formal 1 diferente da declaração
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(110,29): warning C4028: parâmetro formal 2 diferente da declaração
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(110,33): warning C4273: 'stricmp': vínculo de dll inconsistente
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(545,26): message : consulte a definição anterior de 'stricmp'
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(137,31): warning C4996: 'strlwr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strlwr. See online help for details.
+C:\Users\diogo\Desktop\vs\strings\Project1\Source.c(139,31): warning C4996: 'strupr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strupr. See online help for details.
+  Project1.vcxproj -> C:\Users\diogo\Desktop\vs\strings\x64\Debug\Project1.exe

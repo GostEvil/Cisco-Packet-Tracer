@@ -1,0 +1,8 @@
+﻿  Source.c
+C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\Project1\Source.c(12,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\Project1\Source.c(22,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\Project1\Source.c(55,10): warning C4477: 'printf': a cadeia de formato '%d' requer um argumento do tipo 'int', mas um argumento variadic 1 tem o tipo 'double'
+C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\Project1\Source.c(56,10): warning C4477: 'printf': a cadeia de formato '%d' requer um argumento do tipo 'int', mas um argumento variadic 1 tem o tipo 'double'
+C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\Project1\Source.c(59): warning C4716: 'Taxadisciplinas': deve retornar um valor
+C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\Project1\Source.c(49): warning C4716: 'Taxa': deve retornar um valor
+  Project1.vcxproj -> C:\Users\diogo\Desktop\exercicio 12 ficha 6 matrizes\x64\Debug\Project1.exe

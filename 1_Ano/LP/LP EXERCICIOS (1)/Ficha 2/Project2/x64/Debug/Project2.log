@@ -1,0 +1,6 @@
+﻿  Source.c
+C:\Users\diogo\Desktop\Ficha 2\Project2\Source.c(10,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\Ficha 2\Project2\Source.c(16,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\Ficha 2\Project2\Source.c(22,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\Ficha 2\Project2\Source.c(28,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Project2.vcxproj -> C:\Users\diogo\Desktop\Ficha 2\x64\Debug\Project2.exe

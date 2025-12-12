@@ -1,0 +1,5 @@
+﻿  Source.c
+C:\Users\diogo\Desktop\vs\Ficha10\Ficha10\Source.c(15,2): warning C4013: 'gets' indefinido; assumindo extern retornando int
+C:\Users\diogo\Desktop\vs\Ficha10\Ficha10\Source.c(17,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha10\Ficha10\Source.c(30,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Ficha10.vcxproj -> C:\Users\diogo\Desktop\vs\Ficha10\x64\Debug\Ficha10.exe

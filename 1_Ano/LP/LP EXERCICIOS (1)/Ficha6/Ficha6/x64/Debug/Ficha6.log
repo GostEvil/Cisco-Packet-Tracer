@@ -1,0 +1,5 @@
+﻿  Origem.c
+C:\Users\diogo\Desktop\vs\Ficha6\Ficha6\Origem.c(9,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha6\Ficha6\Origem.c(23,14): warning C4244: 'return': conversão de 'float' para 'int', possível perda de dados
+C:\Users\diogo\Desktop\vs\Ficha6\Ficha6\Origem.c(40,11): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+  Ficha6.vcxproj -> C:\Users\diogo\Desktop\vs\Ficha6\x64\Debug\Ficha6.exe

@@ -1,0 +1,10 @@
+﻿  Origem.c
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(6,10): warning C4013: 'verificarpesoM' indefinido; assumindo extern retornando int
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(8,10): warning C4013: 'verificarpesof' indefinido; assumindo extern retornando int
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(12,32): warning C4142: 'verificarpesoM': redefinição benigna de tipo
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(29,32): warning C4142: 'verificarpesof': redefinição benigna de tipo
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(50,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(52,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(45): warning C4716: 'verificarpesof': deve retornar um valor
+C:\Users\diogo\Desktop\vs\Ficha3\Ficha3\Origem.c(28): warning C4716: 'verificarpesoM': deve retornar um valor
+  Ficha3.vcxproj -> C:\Users\diogo\Desktop\vs\Ficha3\x64\Debug\Ficha3.exe

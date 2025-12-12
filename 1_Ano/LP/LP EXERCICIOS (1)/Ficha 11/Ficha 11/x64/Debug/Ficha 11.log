@@ -1,0 +1,5 @@
+﻿  Origem.c
+C:\Users\diogo\Desktop\vs\Ficha 11\Ficha 11\Origem.c(37,3): warning C4013: 'gets' indefinido; assumindo extern retornando int
+C:\Users\diogo\Desktop\vs\Ficha 11\Ficha 11\Origem.c(32,7): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha 11\Ficha 11\Origem.c(39,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Ficha 11.vcxproj -> C:\Users\diogo\Desktop\vs\Ficha 11\x64\Debug\Ficha 11.exe

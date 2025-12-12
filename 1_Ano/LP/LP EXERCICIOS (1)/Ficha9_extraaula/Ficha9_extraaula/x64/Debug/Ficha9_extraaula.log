@@ -1,0 +1,14 @@
+﻿  Origem.c
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(24,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(27,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(39,11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(59,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(73,18): warning C4047: 'função': 'int **' difere em níveis de indireção de 'int [1000]'
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(73,17): warning C4024: 'guarda_numeros': tipos diferentes para parâmetro formal e real 1
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(67,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(71,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(87,24): warning C4047: 'função': 'int **' difere em níveis de indireção de 'int [1000]'
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(87,17): warning C4024: 'guarda_numeros': tipos diferentes para parâmetro formal e real 1
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(90,12): warning C4101: 'v': variável local não referenciada
+C:\Users\diogo\Desktop\vs\Ficha9_extraaula\Ficha9_extraaula\Origem.c(88): warning C4716: 'ordenar_inteiros': deve retornar um valor
+  Ficha9_extraaula.vcxproj -> C:\Users\diogo\Desktop\vs\Ficha9_extraaula\x64\Debug\Ficha9_extraaula.exe

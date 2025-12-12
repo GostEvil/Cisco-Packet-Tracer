@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ficha 6 extra aula PI", "Ficha 6 extra aula PI\Ficha 6 extra aula PI.vcxproj", "{647D233A-0555-497C-B02B-AE9C0E4EC26C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Debug|x64.ActiveCfg = Debug|x64
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Debug|x64.Build.0 = Debug|x64
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Debug|x86.ActiveCfg = Debug|Win32
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Debug|x86.Build.0 = Debug|Win32
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Release|x64.ActiveCfg = Release|x64
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Release|x64.Build.0 = Release|x64
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Release|x86.ActiveCfg = Release|Win32
+		{647D233A-0555-497C-B02B-AE9C0E4EC26C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F805E84-B969-4C41-B773-BD1110A76245}
+	EndGlobalSection
+EndGlobal
